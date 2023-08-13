@@ -7,55 +7,79 @@
 
 .navbar {
     background: #131313;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 999;
 }
 
 .navbar__container {
     display: flex;
-    justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0px;
+    padding: auto;
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 4rem;
+}
+
+.fa-gamepad{
+    margin-right: 0.5rem;
+    color: #ff8177;
+    font-size: xx-large;
+}
+
+a > span {
+    color:#e9e9e9;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+    background-image: linear-gradient(to top, #ff8177 0%, #ff8177 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.fa-gen{
-    margin-right: 0.5rem;
 }
 
 .navbar__menu{
-    display: flex;
+    display:flex;
     align-items: center;
     list-style: none;
     text-align: center;
+    font-size: large;
+    margin-left: 4rem;
 }
 
 .navbar__item {
-    height: 80px;
+    height: auto;
+    display: flex;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+  
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+  
+.search-bar select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
 }
 
 .navbar__links {
@@ -64,43 +88,63 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 1rem;
     height: 100%;
+    font-size: small;
 }
 
+.navbar__links:hover {
+    color: #f77062;
+}
+
+.fa-cart-shopping {
+    width: fit-content;
+    height: fit-content;
+    padding-right: 0.5rem;
+}
 .navbar__btn {
     display: flex;
-    justify-content: center;
+    gap: 4px;
+    margin-left: 2rem;
     align-items: center;
-    padding: 0 1rem;
-    width: 100%;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
+    color: #ffff;
+    background-color: #f77062;
     border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
+    background-color: #4837ff;
+    transition: 0.3s ease-out;
 }
 
-.navbar__links:hover{
-    color: #f77062;
-    transition: all 0.3s ease;
-}
 
 @media screen and (max-width: 960px) {
+
+    .search-bar {
+        display: block;
+        align-items: center;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #121212
+    }
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -120,7 +164,7 @@
         top:-1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 80vh;
         z-index: -1;
     }
     
@@ -130,7 +174,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 60vh;
         font-size: 1.6rem;
     }
 
@@ -165,16 +209,16 @@
     }
 
     .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        width: 80%;
+        display: inline-flex;
+        gap: 4px;
+        margin-left: 2rem;
         align-items: center;
-        height: 80px;
-        margin: 0;
+        font-weight: bold;
+        font-size: small;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        padding-right: 5rem;        
     }
 
     .navbar__toggle .bar {
@@ -199,24 +243,16 @@
 /* hero Section CSS */
 
 .main {
-    background-color: #141414;
-}
+    background-image: url(/Service-Tech-Project/img/Background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
 
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 100%;
-    padding: 0 50px;
 }
 
 .main__content {
- padding-left: 50px;
+    padding-top: 12rem;
+    padding-left: 4rem;
 }
 
 .main__content h1{
@@ -229,21 +265,16 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-.main__content h2 {
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-    background-size: 100%;
+.main__content h3 {
+    font-size: 2rem;
+    background-color: #2d1de1;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -301,38 +332,55 @@
 /* Mobile Responsive */
 
 @media screen and (max-width: 768px) {
-    .main__container{
+
+    .main {
+        background-image: url(/Service-Tech-Project/img/Background\ image.jpg);
+        background-size: fill;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: #131313;
+    }
+
+    .main__container {
         display: grid;
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
         width: 100%;
-        margin: 0 auto;
-        height: 90vh;
+        height: 100vh;
     }
 
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
+        align-items: center;
     }
 
     .main__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
+        align-items: center;
     }
 
-    .main__content h2 {
-        font-size: 3rem;
+    .main__content h3 {
+        font-size: 1rem;
     }
 
     .main__content p {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 15px;
+        text-align: center;
     }
     
 }
 
 @media screen and (max-width: 480px) {
+    .main__container {
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        height: 100vh;
+    }
     .main__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
@@ -357,8 +405,8 @@
 
 .services {
     background: #141414;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: auto;
     align-items: center;
     height: 100vh;
 }
@@ -391,8 +439,8 @@
 
 .services__card {
     margin: 1rem;
-    height: 525px;
-    width: 400px;
+    height: 200px;
+    width: 150px;
     border-radius: 4px;
     background-image: linear-gradient( to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/24Frontend-Project/src/assets/images/pexels-areous-ahmad-3175979.jpg');
     background-size: cover;
