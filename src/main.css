@@ -12,7 +12,7 @@
 .navbar {
     background: #131313;
     font-size: 1.2rem;
-    position: relative;
+    position: sticky;
     top: 0;
     z-index: 999;
 }
@@ -263,7 +263,7 @@ a > span {
 
 .main__content {
     padding-top: 12rem;
-    padding-left: 6.5rem;
+    padding-left: 12rem;
 }
 
 .main__content h1{
@@ -287,6 +287,13 @@ a > span {
     -webkit-text-stroke: 1.5px #f771629d;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 20px;
+    color: #121212;
+    font-weight: 1000;
 }
 
 .main__btn {
@@ -349,7 +356,7 @@ a > span {
 
     .main__container {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: max-content;
         align-items: center;
         justify-self: center;
         width: 100%;
@@ -360,13 +367,14 @@ a > span {
         text-align: center;
         margin-bottom: 4rem;
         align-items: center;
+        justify-content: center;
     }
 
     .main__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
         align-items: center;
-        margin-right: 5rem;
+        margin-right: 8rem;
     }
 
     .main__content h3 {
@@ -386,7 +394,7 @@ a > span {
     }
 
     .main__btn {
-        padding: 12px 36px;
+        /* padding: 12px 36px; */
         margin: 2.5rem 0;
     }
 
@@ -402,32 +410,30 @@ a > span {
         justify-self: center;
         width: 100%;
         height: 100vh;
+        display: grid;
+        grid-template-columns: max-content;
     }
 
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
         align-items: center;
-        margin-right: 5rem;
     }
 
     .main__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
-        margin-right: 5rem;
     }
 
     .main__content h3 {
         font-size: 2rem;
         text-align: center;
-        margin-right: 5rem;
+        justify-content: center;
     }
 
     .main__content p {
-        text-align: center;
-        margin-top: 2rem;
-        margin-right: 5rem;
-        font-size: 3.5rem;
+        padding: 12px 36px;
+        margin: 2.5rem 0;
     }
 
     .main__btn {
@@ -465,12 +471,12 @@ a > span {
 .card-word > h4{
     margin-top: 2rem;
     text-align: center;
-    font-size:xx-large;
+    font-size:x-large;
     color: #f77062;
 }
 
 .card:hover {
-    transform: translateY(5px);
+    transform: scale(1.08);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -482,7 +488,7 @@ a > span {
 
 .card h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: #121212;
 }
 
@@ -540,6 +546,7 @@ a > span {
         transition: all 0.35s;
         outline: none;
         margin-left: 13rem;
+        margin-bottom: 4rem;
     }
 .view-more-button:hover {
         transition: 0.3s ease-out;
