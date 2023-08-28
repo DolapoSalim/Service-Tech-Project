@@ -77,6 +77,7 @@ a > span {
     border-radius: 5px;
     border: none;
     text-align: center;
+    font-family: 'Reggae One', cursive;
 }
   
 .search-bar select{
@@ -84,6 +85,7 @@ a > span {
     border-radius: 5px;
     border: none;
     margin-right: 0.5rem;
+    font-family: 'Reggae One', cursive;
 }
 
 .navbar__links {
@@ -95,6 +97,7 @@ a > span {
     padding: 1rem;
     height: 100%;
     font-size: small;
+    font-family: 'Reggae One', cursive;
 }
 
 .navbar__links:hover {
@@ -119,6 +122,7 @@ a > span {
     font-weight: bold;
     font-size: small;
     text-align: center;
+    font-family: 'Reggae One', cursive;
 }
 
 .button {
@@ -134,6 +138,7 @@ a > span {
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+     font-family: 'Reggae One', cursive;
 }
 
 .button:hover {
@@ -281,18 +286,20 @@ a > span {
 }
 
 .main__content h3 {
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #000000;
-    -webkit-text-stroke: 1.5px #f771629d;
+    -webkit-text-stroke: .1px #f77062;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    font-family: 'Reggae One', cursive;
 }
 
 .main__content p {
     margin-top: 1rem;
     font-size: 20px;
-    color: #121212;
+    color: #ffffff;
+    -webkit-text-stroke: .5px #000000;
     font-weight: 1000;
 }
 
@@ -309,6 +316,7 @@ a > span {
     position: relative;
     transition: all 0.35s;
     outline: none;
+    font-family: 'Reggae One', cursive;
 }
 
 .main__btn:hover {
@@ -452,7 +460,7 @@ a > span {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(222, 201, 201);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
@@ -473,6 +481,7 @@ a > span {
     text-align: center;
     font-size:x-large;
     color: #f77062;
+    font-family: 'Reggae One', cursive;
 }
 
 .card:hover {
@@ -490,6 +499,7 @@ a > span {
     margin: 0;
     font-size: 20px;
     color: #121212;
+    font-family: 'Reggae One', cursive;
 }
 
 .card p {
@@ -514,6 +524,7 @@ a > span {
     opacity: 0; /* Hide by default */
     transition: opacity 0.3s;
     z-index: 1; /* Place above card content */
+    font-family: 'Reggae One', cursive;
 }
 
 .card:hover .order-button {
@@ -531,22 +542,28 @@ a > span {
     text-decoration: none;
 }
 
+.fa-playstation {
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+
 /* "View More" button */
 .view-more-button {
-        font-size: 1rem;
-        font-weight: bolder;
-        background-color: #f77062;
-        padding: 14px 32px;
-        border: none;
-        border-radius: 8px;
-        color: #121212;
-        margin-top: 3rem;
-        cursor: pointer;
-        position: relative;
-        transition: all 0.35s;
-        outline: none;
-        margin-left: 13rem;
-        margin-bottom: 4rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #f77062;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    color: #121212;
+    margin-top: 3rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-left: 13rem;
+    margin-bottom: 4rem;
+    font-family: 'Reggae One', cursive;
     }
 .view-more-button:hover {
         transition: 0.3s ease-out;
@@ -627,4 +644,42 @@ a > span {
         margin-left: 26rem;
         margin-bottom: 4rem;
     }
+}
+
+#video-container {
+    position: relative;
+    display: grid;
+    align-content: center;
+    background: linear-gradient(to top, #000000a1, #000000);
+    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 70%;
+    display: block;
+    align-items: center;
+    padding: 50px;
+    margin-top: 4rem;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.667);
+    color:#f77062;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.text-overlay p {
+    font-size: 3rem;
+    -moz-text-fill-color: transparent;
+    font-family: 'Reggae One', cursive;
+    font-weight:200;
 }
