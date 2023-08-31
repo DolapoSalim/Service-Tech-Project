@@ -6,11 +6,12 @@
         <title>Next Gaming Website</title>
         <link rel="stylesheet" href="/Service-Tech-Project/src/main.css" type="text/css" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
@@ -125,13 +126,82 @@
                 Your browser does not support the video tag.
             </video>
             <div class="text-overlay">
-                <p>Experience Maximum Play Time Fun</p>
+                <p>Experience Maximum Fun with our Diverse Catalogue</p>
             </div>
         </div>
         
 
+        <div class="card-word2">
+            <h4>
+                Categories
+            </h4>
+        </div>
+        <div class="card-section2">
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div class="card-container scrollport card-container2">
+                <div class="card card2">
+                    <img src="/Service-Tech-Project/img/ps5-games-gt7-hub-image-block-01-en-10mar22.webp" alt="Game 2">
+                    <h2>Action</h2>
+                </div>
+            </div>
+        </div>
+
 
         <script src="/Service-Tech-Project/js/scripts.js" type="text/javascript"></script>
         <script src="https://kit.fontawesome.com/d5625d2315.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $('.card2').hover(function() {
+                    $('.scroll-container').stop().animate({
+                        scrollLeft: $(this).closest('.card-container2').offset().left
+                    }, 300);
+            }, function() {
+                    $('.scroll-container').stop().animate({
+                        scrollLeft: 0
+                    }, 300);
+                });
+            });
+        </script>
     </body>
 </html>

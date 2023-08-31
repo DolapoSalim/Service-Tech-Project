@@ -272,7 +272,7 @@ a > span {
 }
 
 .main__content h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -286,7 +286,7 @@ a > span {
 }
 
 .main__content h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bolder;
     color: #000000;
     -webkit-text-stroke: .1px #f77062;
@@ -298,12 +298,15 @@ a > span {
 .main__content p {
     margin-top: 1rem;
     font-size: 20px;
-    color: #ffffff;
-    -webkit-text-stroke: .5px #000000;
-    font-weight: 1000;
-    /* font-size: 3rem;
+    color: #f77062;
+    font-weight: 500;
     -moz-text-fill-color: transparent;
-    font-family: 'Reggae One', cursive; */
+    font-family: 'Reggae One', cursive;
+    background-color: rgba(0, 0, 0, 0.667);
+    border-radius: 6px;
+    padding: .3rem;
+    width: 50rem;
+    margin-bottom: 2rem;
 }
 
 .main__btn {
@@ -665,8 +668,8 @@ video {
     height: 70%;
     display: block;
     align-items: center;
-    padding: 50px;
-    margin-top: 4rem;
+    margin-top: 12rem;
+    padding: 2rem;
 }
 
 .text-overlay {
@@ -686,4 +689,66 @@ video {
     -moz-text-fill-color: transparent;
     font-family: 'Reggae One', cursive;
     font-weight:200;
+}
+
+
+.card-section2 {
+    background: linear-gradient(to bottom, #000000a1, #000000);
+    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: linear-gradient(to bottom, #ffc1aa, #ff6b57); */
+}
+
+.card-container2 {
+    flex: 0 0 calc(10%);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+.card2 {
+    background-color: rgb(222, 201, 201);
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    margin-top: 2rem;
+    position: relative; /* To position order button */
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.card-word2{
+    display: grid;
+    justify-content: center;
+}
+.card-word2 > h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size:x-large;
+    color: #f77062;
+    font-family: 'Reggae One', cursive;
+}
+
+.card2:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card2 img {
+    max-width: 100%;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.card2 h2 {
+    font-size: 20px;
+    color: #121212;
+    font-family: 'Reggae One', cursive;
+    margin: 12px 0;
 }
