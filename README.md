@@ -1,5 +1,5 @@
 # Service-Tech-Project
-This project is a dummy project for my portfolio, for the design of a tech service website
+This project is for a Game Retail Store website for Next Gaming
 
 ## Acknowledgements
 
