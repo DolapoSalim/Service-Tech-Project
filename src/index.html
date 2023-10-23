@@ -66,10 +66,10 @@
                 <div class="main__content">
                     <h1>LEVEL UP YOUR <br> GAMING EXPERIENCE</h1>
                     <h3>Explore the Ultimate Collection of Games</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit
-                        voluptatum rerum quisquam perferendis autem velit mollitia error consequatur reiciendis
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quibusdam reprehenderit
+                        voluptatum rerum quisquam perferendis <br>autem velit mollitia error consequatur reiciendis
                         cupiditate, ex doloremque doloribus.
-                        debitis similique iure. Tempore itaque repellendus non!
+                        <br>debitis similique iure. Tempore itaque repellendus non!
                     </p>
                     <!-- was supposed to add a paragraph but I decided to remove -->
                     <button class="main__btn btnmain1"><i class="fa-solid fa-cart-shopping"></i>Buy Game</button>
@@ -133,7 +133,7 @@
         <div class="catalog">
             <div class="catalog-header">
                 <h3>
-                    Categories
+                   Top Categories
                 </h3>
             </div>
             <div class="catalog-container">
@@ -170,23 +170,10 @@
                     <h2>Sports</h2>
                 </div>
             </div>
-        </div>
-
+        </div>     
 
         <script src="/Service-Tech-Project/js/scripts.js" type="text/javascript"></script>
         <script src="https://kit.fontawesome.com/d5625d2315.js" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function() {
-                $('.card2').hover(function() {
-                    $('.scroll-container').stop().animate({
-                        scrollLeft: $(this).closest('.card-container2').offset().left
-                    }, 300);
-            }, function() {
-                    $('.scroll-container').stop().animate({
-                        scrollLeft: 0
-                    }, 300);
-                });
-            });
         </script>
     </body>
 </html>
