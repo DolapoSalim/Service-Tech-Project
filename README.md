@@ -14,3 +14,6 @@ This project is for a Game Retail Store website for Next Gaming
 **Client:** React, VanillaCSS, Awesome Font
 
 **Server:** Node
+
+**Visit the website here**
+-[view](https://www.behance.net/gallery/182908839/Next-Gaming-Website-Design)
