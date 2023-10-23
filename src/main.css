@@ -853,3 +853,105 @@ video {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     background-color: #e1e1e1;
 }
+
+
+/* ADVERT SECTION CSS */
+.advert{
+    background: linear-gradient(to top, #000000a1, #000000);
+    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+}
+
+.advert {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+}
+
+.advert-box {
+    display: flex; /* Use Flexbox to place children side by side */
+    justify-content: center;
+    align-items: center;
+}
+
+.advert-box1 {
+    flex: 1; /* Share available space equally with advert-box2 */
+    padding: 10px;
+    text-align: center;
+}
+
+.advert-box2 {
+    flex: 1; /* Share available space equally with advert-box1 */
+    padding: 10px;
+    text-align: center;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color on the black background */
+    margin-right: 10rem;
+    height: 30rem;
+    border-radius: 7px;
+    align-items: center;
+}
+
+.advert-box1>img {
+    margin-left: 10rem;
+    width: 80%;
+    border-radius: 7px;
+}
+
+.button-advert{
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 0px;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3.5px;
+}
+
+.advert-box-text{
+    padding: 6rem;
+    text-align: center;
+}
+
+/* Media query for responsive design on various screen sizes */
+@media screen and (max-width: 960px) {
+    /* CSS adjustments for smaller screens */
+    .advert-box {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center;
+        margin-right: 0; /* Remove the right margin on advert-box2 */
+        height: auto; /* Allow boxes to expand vertically */
+        align-items: center;
+    }
+
+    .advert-box1, .advert-box2 {
+        flex: 1; /* Equal width for both boxes */
+        margin-right: 0; /* Remove the right margin on both boxes */
+        margin-bottom: 20px; /* Add spacing between the boxes */
+        padding: 10px;
+    }
+
+    .advert-box1>img {
+        margin-left: 0; /* Remove the left margin on the image */
+    }
+
+    .advert-box2 {
+        background-color: #000; /* Black background */
+        color: #fff; /* White text color on the black background */
+        height: 20rem; /* Adjust the height for smaller screens */
+    }
+
+    .button-advert {
+        width: 100%; /* Make the button full width on smaller screens */
+    }
+    
+    .advert-box-text {
+        padding: 2rem; /* Adjust text padding for smaller screens */
+        text-align: center;
+    }
+}
+
+/* Additional styles for larger screens (like monitors) can be defined here */
+@media screen and (min-width: 961px) {
+    /* Add styles specific to larger screens if needed */
+}
+
+
