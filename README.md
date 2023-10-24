@@ -1,4 +1,4 @@
-# Service-Tech-Project
+# Next Gaming Website
 This project is for a Game Retail Store website for Next Gaming
 
 ## Acknowledgements
