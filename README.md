@@ -1,5 +1,5 @@
-# Service-Tech-Project
-This project is a dummy project for my portfolio, for the design of a tech service website
+# Next Gaming Website
+This project is for a Game Retail Store website for Next Gaming
 
 ## Acknowledgements
 
@@ -14,3 +14,6 @@ This project is a dummy project for my portfolio, for the design of a tech servi
 **Client:** React, VanillaCSS, Awesome Font
 
 **Server:** Node
+
+**Visit the website here**
+-[view](https://www.behance.net/gallery/182908839/Next-Gaming-Website-Design)
